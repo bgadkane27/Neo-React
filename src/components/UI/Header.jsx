@@ -6,7 +6,9 @@ export const Header = () => {
       <div className="container">
         <div className="grid navbar-grid">
           <div className="logo">
-            <h1>BG Code</h1>
+            <NavLink to="/" className="logo-link">
+              <h1>BG Code</h1>
+            </NavLink>
           </div>
           <nav>
             <ul>
