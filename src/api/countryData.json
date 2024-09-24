@@ -1,42 +1,42 @@
 [
     {
         "id": 101,
-        "country": "Japan",
+        "countryName": "Japan",
         "capital": "Tokyo",
         "population": 125800000,
         "interesting_fact": "Japan is made up of over 6,800 islands."
     },
     {
         "id": 102,
-        "country": "Canada",
+        "countryName": "Canada",
         "capital": "Ottawa",
         "population": 38010000,
         "interesting_fact": "Canada has the longest coastline in the world."
     },
     {
         "id": 103,
-        "country": "Brazil",
+        "countryName": "Brazil",
         "capital": "Brasilia",
         "population": 213900000,
         "interesting_fact": "Brazil is home to the Amazon Rainforest, the largest rainforest in the world."
     },
     {
         "id": 104,
-        "country": "Australia",
+        "countryName": "Australia",
         "capital": "Canberra",
         "population": 25690000,
         "interesting_fact": "Australia is the only country that is also a continent."
     },
     {
         "id": 105,
-        "country": "India",
+        "countryName": "India",
         "capital": "New Delhi",
         "population": 1408000000,
         "interesting_fact": "India is the world's largest democracy."
     },
     {
         "id": 106,
-        "country": "Egypt",
+        "countryName": "Egypt",
         "capital": "Cairo",
         "population": 109300000,
         "interesting_fact": "Egypt is home to the only remaining ancient wonder of the world: the Great Pyramid of Giza."
