@@ -185,13 +185,14 @@ li a {
 
   .gradient-cards{
     padding: 2.4rem 0;
-    gap: 2.4rem;
+    gap: 4.8rem;
 
   }
 
   .cards{
     padding: 1.2rem;
     border: 1px solid #fff;
+    border-radius: 2rem 0rem;
   }
 
   .country-title{
@@ -205,6 +206,7 @@ li a {
   
   p{
     font-size: 1.4rem;
+    padding: .3rem 0;
   }
 
 }
