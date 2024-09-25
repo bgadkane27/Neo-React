@@ -12,7 +12,7 @@ export const About = () => {
                 {countryFact.map((country) => {
                     const { id, countryName, capital, population, interesting_fact } = country;
                     return (
-                        <div className="cards" key={id}>
+                        <div className="container cards bg-green-box" key={id}>
                             <h2 className="country-title">{countryName}</h2>
                             <p>
                                 <span className="country-fact">Capital: </span>
