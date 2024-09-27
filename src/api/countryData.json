@@ -17,14 +17,14 @@
         "id": 103,
         "countryName": "Brazil",
         "capital": "Brasilia",
-        "population": 213900000,
+        "population": "21,39,00,000",
         "interesting_fact": "Brazil is home to the Amazon Rainforest, the largest rainforest in the world."
     },
     {
         "id": 104,
         "countryName": "Australia",
         "capital": "Canberra",
-        "population": 25690000,
+        "population": "2,56,90,000",
         "interesting_fact": "Australia is the only country that is also a continent."
     },
     {

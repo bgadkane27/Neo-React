@@ -1,0 +1,19 @@
+[
+    {
+        "icon": "MdLocationOn",
+        "title": "Find Me",
+        "info": "Pune, Maharashtra, India"
+    },
+
+    {
+        "icon": "MdCall",
+        "title": "Call Me",
+        "info": "9673929867"
+    },
+
+    {
+        "icon": "MdEmail",
+        "title": "Email Me",
+        "info": "b.g.adkane27@gmail.com"
+    }
+]
