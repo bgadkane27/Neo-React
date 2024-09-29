@@ -20,7 +20,7 @@ export const About = () => {
                             </p>
                             <p>
                                 <span className="country-fact">Population: </span>
-                                {population}
+                                {population.toLocaleString()}
                             </p>
                             <p>
                                 <span className="country-fact">Interesting Fact: </span>

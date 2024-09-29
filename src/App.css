@@ -238,8 +238,8 @@ li a {
   position: absolute;
   top: -2px;
   bottom: -2px;
-  left: 0px;
-  right: .5px;
+  left: -2px;
+  right: -2px;
   content: "";
   z-index: -1;
   border-radius: 2rem;
@@ -268,13 +268,17 @@ li a {
 
 .country-fact {
   font-size: 1.6rem;
-  color: #a1a1a1;
+  font-weight: 600;
+  color: #797979;
 }
 
 .section-footer {
   width: 100%;
+  margin-top: 1.5rem;
+  background-color: #353535;
 
   .footer-data {
+    padding-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,11 +294,20 @@ li a {
   .footer-text {
     font-size: 1.6rem;
   }
+
+  .footer-copyright {
+    background-color: #353535;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border-top: 1px solid #38b108;
+    padding: 15px 0;
+}
 }
 
 .section-country {
   width: 100%;
-  margin-top: 5rem;
+  margin: 5rem 0;
   position: relative;
 
   .container {
@@ -306,7 +319,7 @@ li a {
   }
 
   .country-details {
-    padding: 20px;
+    padding: 1.2rem 2.4rem;
     text-align: left;
   }
 

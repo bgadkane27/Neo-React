@@ -27,8 +27,10 @@ export const Footer = () => {
                         );
                     })
                 }
-
             </div>
+            <div className="footer-copyright">
+                <p>&copy; {new Date().getFullYear()} Baburao Adkane. All rights reserved.</p>
+            </div>            
         </footer>
     );
 }
