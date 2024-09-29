@@ -94,6 +94,10 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-four--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .error-center {
   background-image: url("./null.jpg");
   background-size: cover;
@@ -177,104 +181,197 @@ li a {
 }
 
 
-.section-about{
+.section-about {
   width: 100%;
   height: 100vh;
-  
-  .title-about{
+
+  .title-about {
     font-size: 2.4rem;
     text-align: center;
     /* margin-top: 2.4rem; */
     padding-top: 3rem;
   }
 
-  .gradient-cards{
+  .gradient-cards {
     padding: 2.4rem;
     gap: 4.8rem;
 
   }
 
-  .cards{
-    padding: 1.5rem;
-    position: relative;
-    background: linear-gradient(70deg, #221825, #1a171c, #201a25);
-    background-clip: padding-box;
-}
 
-  .bg-green-box,
-  .bg-white-box,
-  .bg-blue-box,
-  .bg-yellow-box{
-    position: relative;
-  }
-
-  .bg-green-box::after,
-  .bg-white-box::after,
-  .bg-blue-box::after,
-  .bg-yellow-box::after{
-    position: absolute;
-    top:-2px;
-    bottom: -2px;
-    left: 0px;
-    right: .5px;
-    content: "";
-    z-index: -1;
-    border-radius: 2rem 0rem;
-    -webkit-border-radius: 2rem 0rem;
-    -moz-border-radius: 2rem 0rem;
-    -ms-border-radius: 2rem 0rem;
-    -o-border-radius: 2rem 0rem;
-}
-
-  .bg-green-box::after{
-    background: linear-gradient(70deg, #252525,#3da03d,#252525);
-  }
-
-  .bg-white-box::after{
-    background: linear-gradient(70deg, #252525,#f7f7f7,#252525);
-  }
-
-  .bg-blue-box::after{
-    background: linear-gradient(70deg, #252525,#3d4ca0,#252525);
-  }
-
-  .bg-yellow-box::after{
-    background: linear-gradient(70deg, #252525,#a0993d,#252525);
-  }
-
-  .country-title{
+  .country-title {
     font-size: 2rem;
   }
 
-  .country-fact{
-    font-size: 1.4rem;
-    color: #a1a1a1;
-  }
-  
-  p{
+
+
+  p {
     font-size: 1.4rem;
     padding: .3rem 0;
   }
 
 }
 
-.section-footer{
-  width:100%;
+.cards {
+  padding: 1.5rem;
+  position: relative;
+  background: linear-gradient(70deg, #221825, #1a171c, #201a25);
+  background-clip: padding-box;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
 
-  .footer-data{
+.bg-green-box,
+.bg-white-box,
+.bg-blue-box,
+.bg-yellow-box {
+  position: relative;
+}
+
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-blue-box::after,
+.bg-yellow-box::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: 0px;
+  right: .5px;
+  content: "";
+  z-index: -1;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.bg-green-box::after {
+  background: linear-gradient(70deg, #252525, #3da03d, #252525);
+}
+
+.bg-white-box::after {
+  background: linear-gradient(70deg, #252525, #f7f7f7, #252525);
+}
+
+.bg-blue-box::after {
+  background: linear-gradient(70deg, #252525, #3d4ca0, #252525);
+}
+
+.bg-yellow-box::after {
+  background: linear-gradient(70deg, #252525, #a0993d, #252525);
+}
+
+
+.country-fact {
+  font-size: 1.6rem;
+  color: #a1a1a1;
+}
+
+.section-footer {
+  width: 100%;
+
+  .footer-data {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: start;
-    gap:2rem
+    gap: 2rem
   }
 
-  .icon{
+  .icon {
     font-size: 2.4rem;
     color: #38b108;
   }
 
-  .footer-text{
+  .footer-text {
     font-size: 1.6rem;
+  }
+}
+
+.section-country {
+  width: 100%;
+  margin-top: 5rem;
+  position: relative;
+
+  .container {
+    max-width: 120rem;
+  }
+
+  .grid {
+    gap: 2.4rem;
+  }
+
+  .country-details {
+    padding: 20px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 1.6rem;
+    padding: .5rem 0;
+  }
+
+  .country-details h1 {
+    font-size: 2rem;
+  }
+
+  .country-image {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #252525; */
+  }
+
+  .country-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 60px;
+  aspect-ratio: 1;
+  background:
+    linear-gradient(45deg, #60B99A 50%, #0000 0),
+    linear-gradient(45deg, #0000 50%, #60B99A 0),
+    linear-gradient(-45deg, #f77825 50%, #0000 0),
+    linear-gradient(-45deg, #0000 50%, #f77825 0),
+    linear-gradient(#554236 0 0);
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  animation: l18 1.5s infinite;
+}
+
+@keyframes l18 {
+  0% {
+    background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%
+  }
+
+  25% {
+    background-position: 0 100%, 100% 0, 50% 50%, 50% 50%, 50% 50%
+  }
+
+  50% {
+    background-position: 0 100%, 100% 0, 100% 100%, 0 0, 50% 50%
+  }
+
+  75% {
+    background-position: 50% 50%, 50% 50%, 100% 100%, 0 0, 50% 50%
+  }
+
+  100% {
+    background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%
   }
 }

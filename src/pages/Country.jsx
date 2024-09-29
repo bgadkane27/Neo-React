@@ -13,11 +13,11 @@ export const Country = () => {
     });
   }, []);
 
-  if (isPending) return <h1>Loading...</h1>;
+  if (isPending) return <div className="loader"></div>
 
   return (
     <section className="section-country">
-      <ul className="grid grid-four--cols">
+      <ul className="container grid grid-three--cols">
         {countries.map((curCountry, index) => {
             return <CountryCard country={curCountry} key={index} />
         })}
