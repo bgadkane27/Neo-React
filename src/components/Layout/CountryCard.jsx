@@ -2,7 +2,7 @@ import {NavLink} from "react-router-dom"
 export const CountryCard = ({ country }) => {
     const { flags, name, population, region, capital } = country;
     return (
-        <li className="country-card cards bg-green-box">
+        <li className="country-card cards bg-blue-box">
             <div>
                 <div className="country-image">
                     <img src={flags.svg} alt={flags.alt} />
