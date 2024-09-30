@@ -11,7 +11,7 @@ export const ErrorPage = () => {
         <li style={{fontSize:14}}>The url may be typed incorrectly.</li>
         <li style={{fontSize:14}}>The link may be broken or outdated link.</li>
         
-        <NavLink to="/">
+        <NavLink to="/" className="logo-link">
           <button className="back-btn">Back to Home</button>
         </NavLink>
       </div>

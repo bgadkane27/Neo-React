@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export const Herosection = () => {
     return (
         <main className="section-hero">
@@ -12,7 +14,10 @@ export const Herosection = () => {
                         endless opportunities for adventure, learning, and personal growth
                         in every corner of the globe.
                     </p>
-                    <button className="main-btn">Explore Now</button>
+                    <NavLink to="/country" className="logo-link">
+                        <button className="main-btn">Explore Now</button>
+                    </NavLink>
+
                 </div>
                 <div className="image-hero">
                     <img src="./Images/world.png" alt="world beauty" className="banner-image" />
