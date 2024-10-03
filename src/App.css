@@ -432,7 +432,81 @@ li a {
   }
 }
 
-.input-field {
+
+
+.select-field {
+  appearance: none;
+  /* width: 100%; */
+  width: 200px;
+  padding: 1.2rem 1.5rem;
+  border: none;
+  border-radius:10rem;
+  font-size: 10px;
+  /* background-color: #777777; */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+  -webkit-border-radius:10rem;
+  -moz-border-radius:10rem;
+  -ms-border-radius:10rem;
+  -o-border-radius:10rem;
+  position: relative;
+}
+
+.select-field:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.section-contact{
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+.field-box{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input-form{
+  padding: 2.4rem;
+  background-color: #202020;
+  border-radius: 1rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width:35rem;
+  max-width: 40rem;
+  padding: .8rem;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize:none;
+  font-size: 16px;
+}
+
+
+input:focus{
+  border-color: #38b108;
+  outline: none;
+}
+
+textarea:focus{
+  border-color: #38b108;
+  outline: none;
+}
+
+
+/* .input-field {
   width: 100%;
   padding: 1.2rem 1.5rem;
   border: none;
@@ -449,27 +523,4 @@ li a {
 .input-field:focus {
   border-color: #007bff;
   outline: none;
-}
-
-.select-field {
-  appearance: none;
-  /* width: 100%; */
-  width: 200px;
-  padding: 1.2rem 1.5rem;
-  border: none;
-  border-radius:10rem;
-  font-size: 16px;
-  background-color: #fff;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  transition: border-color 0.3s ease;
-  -webkit-border-radius:10rem;
-  -moz-border-radius:10rem;
-  -ms-border-radius:10rem;
-  -o-border-radius:10rem;
-  position: relative;
-}
-
-.select-field:focus {
-  border-color: #007bff;
-  outline: none;
-}
+} */
