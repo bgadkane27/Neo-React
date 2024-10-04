@@ -517,3 +517,28 @@ textarea:focus{
   -o-border-radius: 10rem;
 }
 */
+.success-message{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  margin-top: 20px;
+  background-color: #29e929;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
+}
+
+.success-text {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.success-icon{
+  margin-right: 0.5rem;
+}
