@@ -485,13 +485,17 @@ input[type="email"],
 textarea {
   width:35rem;
   max-width: 40rem;
-  padding: .8rem;
+  padding: 1.2rem 1.5rem;
   margin: 10px 0;
   border: none;
-  /* border: 1px solid #ccc; */
-  border-radius: 4px;
-  font-size: 14px;
+  /*border: 1px solid #ccc;
+  */font-size: 14px;
   box-sizing: border-box;
+  border-radius:1rem;
+  -webkit-border-radius:1rem;
+  -moz-border-radius:1rem;
+  -ms-border-radius:1rem;
+  -o-border-radius:1rem;
 }
 
 textarea {
