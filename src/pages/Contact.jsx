@@ -24,7 +24,8 @@ export const Contact = () => {
     }
     return (
         <section className="section-contact">
-            <div className="container field-box ">
+            <div className="container grid grid-two--cols">
+            <div className="field-box ">
                 <form onSubmit={handleFormSubmit} className="input-form">
                     <div>
                         <input
@@ -87,6 +88,10 @@ export const Contact = () => {
                         </p>
                     </div>
                 )}
+            </div>
+            <div className="contact-image">
+                <img src="/Images/contact.png" alt="Contact Image" />
+            </div>
             </div>
         </section>
     );
