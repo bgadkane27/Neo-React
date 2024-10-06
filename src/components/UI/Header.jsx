@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+// import { delay, motion } from "framer-motion";
 export const Header = () => {
   return (
     <header>

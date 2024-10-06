@@ -1,5 +1,5 @@
 import { MdCheckCircle } from "react-icons/md";
-
+// import {framer} from "framer-motion"
 import { useState } from "react";
 
 export const Contact = () => {
@@ -16,7 +16,7 @@ export const Contact = () => {
 
        setTimeout(() => {
         setISSubmitted(false);
-      }, 2000);
+      }, 3000);
 
        event.target.reset();
 
