@@ -1,6 +1,7 @@
 import { About } from "./About";
 import { Herosection } from "../components/UI/Herosection";
 import { Country } from "./Country";
+import { Contact } from "./Contact";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 export const Home = () => {
@@ -15,6 +16,7 @@ export const Home = () => {
       <Herosection />
       <About />
       <Country />
+      <Contact />
     </>
   );
 };
