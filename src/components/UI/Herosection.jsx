@@ -3,18 +3,34 @@ import { motion } from "framer-motion";
 
 const titleVarient = {
   hidden: {
-    x: "-50vw"
+    x: "-50vw",
   },
   visible: {
     x: 0,
-    // rotate: -5,
-    color: "#45ce6e",
     transition: {
-      delay: 0.2,
       type: "spring",
       stiffness: 200,
-      damping: 40
+      damping: 40,
+      when: "beforeChildren",
     },
+  },
+};
+
+const subtitleVarient = {
+  hidden: {
+    opacity: 0,
+    y: 20
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      // delay: 0.2,
+      // duration: 2,
+      type : "spring",
+      stiffness: 800,
+      damping: 10,
+    }
   },
 };
 
@@ -23,20 +39,21 @@ export const Herosection = () => {
     <main className="section-hero">
       <div className="container grid grid-two--cols">
         <div className="content-hero">
-          <motion.h1
-            className="title-hero"
+          <motion.div
             variants={titleVarient}
             initial="hidden"
             animate="visible"
           >
-            Explore the world ! One country at a Time.
-          </motion.h1>
-          <p className="subtitle-hero">
-            Exploring the world opens your mind to new cultures, experiences,
-            and perspectives, enriching your understanding of life. It offers
-            endless opportunities for adventure, learning, and personal growth
-            in every corner of the globe.
-          </p>
+            <h1 className="title-hero">
+              Explore the world ! One country at a Time.
+            </h1>
+            <motion.p className="subtitle-hero" variants={subtitleVarient}>
+              Exploring the world opens your mind to new cultures, experiences,
+              and perspectives, enriching your understanding of life. It offers
+              endless opportunities for adventure, learning, and personal growth
+              in every corner of the globe.
+            </motion.p>
+          </motion.div>
           <div>
             <NavLink to="/country" className="logo-link">
               <button className="main-btn">Explore Now</button>
